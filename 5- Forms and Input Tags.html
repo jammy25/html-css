@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h2>This is HTML forms tutorial</h2>
+    <form action="backend.php">
+        <div>
+            Name: <input type="text" name = "myName">
+        </div>
+        <br>
+        <div>
+            Role: <input type="text" name = "myRole">
+        </div>
+        <br>
+        <label for="emailtext"> Email</label>
+        <div>
+            <input type="email" name="myEmail" id="emailtext">
+        </div>
+        <br>
+        <div>
+            Date: <input type="date" name="myDate">
+        </div>
+        <br>
+        <div>
+            Do you have a wand: <input type="checkbox" name="Ollivanders">
+        </div>
+        <br>
+        <label for="pet">Choose your pet</label>
+        <select name="myPet" id="pet">
+            <option value="defvalue" selected>None</option>
+            <option value="Owlery">Owl</option>
+            <option value="Peter">Mouse</option>
+        </select>
+        <div>
+        <br>
+            Gender: Male<input type="radio" name="myGender"> Female<input type="radio" name="myGender"> Other <input type="radio" name="myGender">
+        </div>
+        <br>
+        <div>
+            Write about yourself: <br><textarea name="myText" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div>
+    </form>
+</body>
+</html>
