@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Tutorial</title>
+    <!-- <link rel="stylesheet" href="tut1.css"> -->
+    <style>
+        p{
+            color: yellow !important;
+            background-color:green !important;
+        }
+        </style>
+    <link rel="stylesheet" href="tut1.css">  
+    <!-- External here would have been priority over internal since its below internal_css but since we have put important in internal so it precides over all-->
+</head>
+<body>
+    <h3>This is a CSS Tutorial</h3>
+    <!-- <p style="color: red; background-color: black;">This tutorial will teach you everything you need to know about Html/Css</p> -->
+    <p>This tutorial will teach you everything you need to know about Html/Css</p>
+    
+    <!-- Inline_Css gets most priority, and among internal_css and external_css whichever is written at last has the more priority unless we have written !important at any css -->
+</body>
+</html>
