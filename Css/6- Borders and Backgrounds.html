@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders and Backgrounds</title>
+    <style>
+        #firstPara{
+            background-color: red;
+            height: 100px;
+            width: 455px;
+            /* border-style: solid;
+            border-color: rgb(14, 27, 206);
+            border-width: 4px; */
+            border-radius: 15px;
+
+            border: 4px solid blue;    /*To write in a single line*/
+        }
+
+        #secondPara{
+            background-color: green;
+            height: 100px;
+            width: 455px;
+            border-top: 2px solid violet;
+            border-right: 2px solid blue;
+            border-left: 2px solid red;
+            border-bottom: 2px solid rebeccapurple;
+
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 25px;            
+        }
+
+        #thirdPara{
+            height: 1100px;
+            width: 955px;
+            background-image: url("https://media.istockphoto.com/id/466187907/photo/landscape-aerial-view.jpg?s=612x612&w=0&k=20&c=4DAsAkuuXNxBtLWlL-dpQxFKoKsq3zpr6756Ke4eaao=");
+            border: 2px solid red;
+            background-repeat: no-repeat;  /*repear-x and repeat-y will make it repeat on x and y axis*/
+            background-position: center center;
+            /* background-position: 122px 52px; */
+        }
+    </style>
+</head>
+<body>
+    <h3>Let's learn about height, width, borders and backgrounds</h3>
+    <p id="firstPara">This is a paragraph</p>
+    
+    <h3>This is second para</h3>
+    <p id="secondPara">This is a second paragraph</p>
+    
+    <h3>This is third para</h3>
+    <p id="thirdPara">This is third paragraph</p>
+</body>
+</html>
