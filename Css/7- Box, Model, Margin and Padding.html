@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{                               /* '*' --> here represents an universal selector*/
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: #ecd9fd;
+        }
+        .container{
+            background-color: #f6e2e9;
+            border: 3px solid rgb(165 178 218);
+            padding: 20px;
+
+            /* We can set padding/margin for top, bottom, left and right */
+            
+            /* padding-top: 78px;
+            padding-bottom: 35px; */
+
+            /* padding: top right bottom left */
+            padding: 23px 15px 23px 15px;
+
+            /* padding: y(top/bottom) x(left/right); */
+            /* padding: 34px 19px; */
+
+            margin: 34px;
+
+            border-radius: 23px;
+            width: 500px;
+
+            /* box-sizing: border-box;   --> We can directly put this in an universal selector to apply on all boxes */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, tenetur est minima sunt excepturi, a quas nemo libero dignissimos eveniet velit fuga placeat?</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, tenetur est minima sunt excepturi, a quas nemo libero dignissimos eveniet velit fuga placeat?</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, tenetur est minima sunt excepturi, a quas nemo libero dignissimos eveniet velit fuga placeat?</p>
+    </div>
+</body>
+</html>
