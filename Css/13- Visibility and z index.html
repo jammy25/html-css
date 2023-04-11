@@ -15,19 +15,23 @@
 
     #box1{
         background-color: red;
+        /* z-index will work only for position: relative, absolute, fixed or sticky */
+        /* The box having less z-index will be behind the box having more z-index */
         position: relative;
         top: 42px;
         z-index: 1;
     }
     #box2{
         background-color: green;
-        /* visibility: hidden; */   /* Will hide the box but will keep the space*/
-        /* display: none; */        /* Will hide the box and will not keep the space */
         position: relative;
         top:14px;
         z-index: 0;
     }
-    #box3{background-color: yellow;}
+    #box3{
+        background-color: yellow;
+        /* visibility: hidden; */   /* Will hide the box but will keep the space*/
+        /* display: none; */        /* Will hide the box and will not keep the space */
+    }
     #box4{background-color: violet;}
 </style>
 <body>
