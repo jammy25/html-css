@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+</head>
+<style>
+    .container {
+        display: flex;
+    }
+
+    .card {
+        padding: 23px 12px;
+        margin: 23px 12px;
+        /* border: 2px solid red; */
+        background-color: bisque;
+
+        /* box-shadow: x-offset y-offset color; */
+        /* box-shadow: x-offset y-offset blur-radius color; */
+        /* box-shadow: x-offset y-offset blur-radius spread-radius color; */
+        box-shadow: 7px 7px 15px burlywood;
+        /* box-shadow: -7px -7px 15px 23px burlywood; */
+
+        /* To get box shadow inside */
+        /* box-shadow: inset 7px 17px rgb(240, 240, 58); */
+    }
+
+    .card h2 {
+        text-shadow: 2px 1px lime;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>card-1</h2>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque aliquid ratione magnam ipsum, consequatur
+            quaerat id corporis tenetur iste sunt fugiat nesciunt laboriosam corrupti odit distinctio iusto recusandae
+            voluptatem, itaque molestias voluptas quos officia!
+        </div>
+        <div class="card" id="card-2">
+            <h2>card-2</h2>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque aliquid ratione magnam ipsum, consequatur
+            quaerat id corporis tenetur iste sunt fugiat nesciunt laboriosam corrupti odit distinctio iusto recusandae
+            voluptatem, itaque molestias voluptas quos officia!
+        </div>
+        <div class="card" id="card-3">
+            <h2>card-3</h2>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque aliquid ratione magnam ipsum, consequatur
+            quaerat id corporis tenetur iste sunt fugiat nesciunt laboriosam corrupti odit distinctio iusto recusandae
+            voluptatem, itaque molestias voluptas quos officia!
+        </div>
+    </div>
+</body>
+
+</html>
