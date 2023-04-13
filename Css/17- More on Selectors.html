@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+</head>
+    <style>
+        h1{
+            background-color:black;
+            color: red;
+            font-weight: bold;
+            text-align: center;
+        
+        /* Will apply on all paragraphs inside the div*/
+        }
+        div p{
+            background-color:yellow
+        }
+
+        /* Will apply to all the li */
+        /* div li{
+            color:rgb(3, 247, 44)            
+        } */
+
+        /* if p is contained by any li which is contained by div */
+        div li p{
+            color: rgb(126, 8, 237);
+        }
+
+        /* Will apply to direct lines whose parent is div */
+        div > p{
+            font-style: italic;
+        }
+
+        /* To apply Css on paras whose last elements is a div i.e P is right after div*/
+        div + p{
+            font-weight: bold;
+        }
+    </style>
+<body>
+    <h1>More on Selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li>
+                    <p>This is a para</p>
+                </li>
+                <li>This is another para</li>
+                <p>This is a  para inside ul and not a direct child of div</p>
+            </ul>
+            <p>This is a paragraph</p>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>This is the outermost paragraph</p>
+</body>
+</html>
