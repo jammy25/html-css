@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,11 @@
     <title>Keyframe and Animation</title>
 </head>
 <style>
-    .container{
+    .container {
         background-color: aqua;
     }
 
-    .box{
+    .box {
         width: 200px;
         height: 200px;
         background-color: blue;
@@ -26,37 +27,42 @@
         /* animation-direction: reverse; */
         /* These properties can be set using this shorthand */
         /* animation: animation-name animation-duration animation-timing function animation-delay animation-iteration-count animation-fill-mode; */
-        animation: kishan 5s ease-in 1s 12 backwards;
+        /* animation: kishan 5s ease-in 1s 12 backwards; */
     }
- 
+
     @keyframes kishan2 {
-        0%{
+        0% {
             top: 0px;
             left: 0px;
         }
-        25%{
+
+        25% {
             top: 250px;
             left: 0px;
         }
-        75%{
+
+        75% {
             top: 250px;
             left: 250px;
         }
-        100%{
+
+        100% {
             top: 0px;
             left: 250px;
         }
     }
 
-    @keyframes kishan1{
-        from{
+    @keyframes kishan1 {
+        from {
             width: 200px;
         }
+
         to {
             width: 400px;
         }
     }
 </style>
+
 <body>
     <div class="container">
         <div class="box">
@@ -64,4 +70,5 @@
         </div>
     </div>
 </body>
+
 </html>
